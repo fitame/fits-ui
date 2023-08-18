@@ -1,10 +1,17 @@
 {
   "name": "fits-ui",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ui library based in Shadcn ui",
-  "main": "index.js",
+  "author": "Ednilson Cardoso dos Santos<ednilsonsantos443@gmail.com>",
   "type": "module",
+  "source": "./src/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fitame/fits-ui.git"
@@ -16,7 +23,6 @@
     "library",
     "shadcd"
   ],
-  "author": "Ednilson Cardoso dos Santos",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fitame/fits-ui/issues"
