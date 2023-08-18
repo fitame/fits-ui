@@ -4,7 +4,6 @@ import commonjs from '@rollup/plugin-commonjs';
 import dts from 'rollup-plugin-dts';
 import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
-import prettier from 'rollup-plugin-prettier';
 const pkg = readPackageSync();
 
 const input = 'src/index.ts';
@@ -40,9 +39,6 @@ export default [
         ]  
       }),
       esbuild({
-        sourceMap: sourcemap,
-      }),
-      prettier({
         sourceMap: sourcemap,
       })
     ],

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as LabelPrimitive from '@radix-ui/react-label';
 
-import {Label} from '@/components/ui/label/label';
+import {Label} from '../label/label';
 import styles from './form.module.scss';
 import {useFormField} from './useFormField';
 
