@@ -1,0 +1,115 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": [
+      "airbnb-typescript",
+      "airbnb",
+      "plugin:prettier/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "project": "tsconfig.json",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint",
+      "testing-library",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/require-default-props": "off",
+      "no-shadow": "off",
+      "import/no-extraneous-dependencies": "off",
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "no-param-reassign": [
+        2,
+        {
+          "props": false
+        }
+      ],
+      "react-hooks/exhaustive-deps": "warn",
+      "react/jsx-props-no-spreading": 0,
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ],
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off",
+      "testing-library/await-async-query": "error",
+      "testing-library/no-await-sync-query": "error",
+      "testing-library/no-debugging-utils": "warn",
+      "testing-library/no-dom-import": "off",
+      "arrow-body-style": "off",
+      "prefer-arrow-callback": 1,
+      "import/prefer-default-export": 0,
+      "react/function-component-definition": "off",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".tsx",
+            ".ts",
+            ".js",
+            "jsx"
+          ]
+        }
+      ],
+      "no-restricted-exports": 0,
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never",
+          "tsx": "never",
+          "js": "never",
+          "jsx": "never"
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/**/*.{js,tsx,ts}",
+          "**/?(*.)+(spec|test).{js,tsx,ts}"
+        ],
+        "extends": [
+          "plugin:testing-library/react"
+        ]
+      },
+      {
+        "files": [
+          "*.ts",
+          "*.mts",
+          "*.cts",
+          "*.tsx"
+        ],
+        "rules": {
+          "no-undef": "off"
+        }
+      }
+    ],
+    "ignorePatterns": ["prettier.config.js", "vite.config.ts", "rollup.config.mjs"]
+  }

@@ -1,0 +1,41 @@
+
+
+@mixin desktops-screen {
+  @media (min-width: 1281px) {
+    @content;
+  }
+}
+
+@mixin laptops-screen {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+
+@mixin tablets-portrait-screen {
+  @media (min-width: 768px)  {
+    @content;
+  }
+}
+
+@mixin tablets-landscape-screen {
+  @media (min-width: 768px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+@mixin mobile-landscape-screen {
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+
+
+@mixin smartphone-screen {
+  @media (min-width: 320px) and (max-width: 480px)  {
+    @content;
+  }
+}
