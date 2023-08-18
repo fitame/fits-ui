@@ -1,3 +1,6 @@
+import * as FormGroup from './componentes/form';
+
 export {Input} from './componentes/input/input';
-export {Form} from './componentes/form/form';
+export {FormGroup};
 export {InputPinCode} from './componentes/inputPinCode/inputPinCode';
+export {Label} from './componentes/label/label';
