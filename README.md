@@ -53,7 +53,7 @@ export default App;
 
 We warmly welcome contributions from the community! If you're interested in contributing to fits-ui, please follow our **Contribution Guidelines**:.
 
-- Create a issue with description and exemples
+- Create a issue with description and examples or assign one issue 
 - Create a fork
 - Create a branch in you fork using convencional commits
 - Open a pull request to the repository 
