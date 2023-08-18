@@ -1,6 +1,6 @@
-# fits-ui - Elegant CSS Modules-Based UI Library
+# fits-ui - Elegant CSS Modules Based in shadcd/ui
 
-FitsUI is a sophisticated UI library built on the foundation of CSS Modules, designed to help you create stunning user interfaces for your web applications. With fits-ui, you can effortlessly develop visually appealing and responsive UI components, all while benefiting from the modularity and encapsulation provided by CSS Modules.
+fits-ui is a sophisticated UI library built on the foundation of CSS Modules, designed to help you create stunning user interfaces for your web applications. With fits-ui, you can effortlessly develop visually appealing and responsive UI components, all while benefiting from the modularity and encapsulation provided by CSS Modules.
 
 ## Features
 
@@ -12,11 +12,11 @@ FitsUI is a sophisticated UI library built on the foundation of CSS Modules, des
 
 - **Customization:** While fits-ui offers a beautiful default style, you can easily customize the components to match your brand's colors and design preferences.
 
-- **Easy Integration:** Getting started with FitsUI is as simple as installing the package and importing the components you need.
+- **Easy Integration:** Getting started with fits-ui is as simple as installing the package and importing the components you need.
 
 ## Installation
 
-You can quickly integrate FitsUI into your project using npm:
+You can quickly integrate fits-ui into your project using npm:
 
 ```bash
 npm install fits-ui
@@ -24,14 +24,14 @@ npm install fits-ui
 
 ## Usage
 
-1. Import the FitsUI component styles using CSS Modules:
+1. Import the fits-ui component styles using CSS Modules:
 
 ```jsx
 import React from 'react';
-import 'fits-ui/dist/fits-styles.css'; // Import FitsUI CSS Module
+import 'fits-ui/dist/fits-styles.css'; // Import fits-ui CSS Module
 ```
 
-2. Import and utilize FitsUI components in your React application:
+2. Import and utilize fits-ui components in your React application:
 
 ```jsx
 import React from 'react';
@@ -63,4 +63,4 @@ We warmly welcome contributions from the community! If you're interested in cont
 
 ## License
 
-FitsUI is released under the [MIT License](https://opensource.org/licenses/MIT).
+fits-ui is released under the [MIT License](https://opensource.org/licenses/MIT).
