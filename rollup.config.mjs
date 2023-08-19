@@ -22,11 +22,12 @@ export default [
     plugins: [
       commonjs(),
       resolve(),
-      postcss({ 
+      postcss({
         modules: true,
         extract: "fits-styles.css",
         minimize: true,
         use: ["sass"],
+        sourcemap: sourcemap,
         plugins: [postcssImport()]
       }),
       esbuild({
