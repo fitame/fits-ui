@@ -14,9 +14,10 @@ export const FormItem = React.forwardRef<
   React.HTMLAttributes<HTMLDivElement>
 >(({className, ...props}, ref) => {
   const id = React.useId();
+  const memoId = React.useMemo(() => ({id}), [id]);
 
   return (
-    <FormItemContext.Provider value={{id}}>
+    <FormItemContext.Provider value={memoId}>
       <div ref={ref} className={styles.formItem} {...props} />
     </FormItemContext.Provider>
   );
