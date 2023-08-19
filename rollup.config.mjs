@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import dts from 'rollup-plugin-dts';
 import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
+import postcssImport from 'postcss-import';
 const pkg = readPackageSync();
 
 const input = 'src/index.ts';
@@ -24,19 +25,9 @@ export default [
       postcss({ 
         modules: true,
         extract: "fits-styles.css",
+        minimize: true,
         use: ["sass"],
-        plugins: [
-          () => {
-            return root => {
-              root.prepend(
-                postcss.atrule({
-                  name: "import",
-                  params: '"src/styles/global.scss"'
-                })
-              );
-            };
-          }
-        ]  
+        plugins: [postcssImport()]
       }),
       esbuild({
         sourceMap: sourcemap,
