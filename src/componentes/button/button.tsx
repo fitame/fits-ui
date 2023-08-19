@@ -33,7 +33,7 @@ export interface ButtonProps
   size?: keyof typeof buttonVariants.variants.size;
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const ButtonComponent = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({className, variant, size, asChild = false, ...props}, ref) => {
     const Comp = asChild ? Slot : 'button';
     return (
@@ -53,6 +53,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   },
 );
-Button.displayName = 'Button';
+ButtonComponent.displayName = 'Button';
+
+const Button = React.memo(ButtonComponent);
 
 export {Button, buttonVariants};

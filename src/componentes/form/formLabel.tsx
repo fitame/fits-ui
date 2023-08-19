@@ -5,7 +5,7 @@ import {Label} from '../label/label';
 import styles from './form.module.scss';
 import {useFormField} from './useFormField';
 
-export const FormLabel = React.forwardRef<
+const FormLabelComponent = React.forwardRef<
   React.ElementRef<typeof LabelPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
 >(({className, ...props}, ref) => {
@@ -20,4 +20,6 @@ export const FormLabel = React.forwardRef<
     />
   );
 });
-FormLabel.displayName = 'FormLabel';
+FormLabelComponent.displayName = 'FormLabel';
+
+export const FormLabel = React.memo(FormLabelComponent);

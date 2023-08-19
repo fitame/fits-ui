@@ -2,7 +2,7 @@ import * as React from 'react';
 import {InputProps} from './input.types';
 import styles from './input.module.scss';
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
+const InputComponent = React.forwardRef<HTMLInputElement, InputProps>(
   ({className, type, ...props}, ref) => {
     return (
       <input
@@ -14,6 +14,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
   },
 );
-Input.displayName = 'Input';
+InputComponent.displayName = 'Input';
+
+const Input = React.memo(InputComponent);
 
 export {Input};

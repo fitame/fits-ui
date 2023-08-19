@@ -9,7 +9,7 @@ export const FormItemContext = React.createContext<FormItemContextValue>(
   {} as FormItemContextValue,
 );
 
-export const FormItem = React.forwardRef<
+const FormItemComponent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({className, ...props}, ref) => {
@@ -22,4 +22,9 @@ export const FormItem = React.forwardRef<
     </FormItemContext.Provider>
   );
 });
-FormItem.displayName = 'FormItem';
+
+FormItemComponent.displayName = 'FormItem';
+
+const FormItem = React.memo(FormItemComponent);
+
+export {FormItem};

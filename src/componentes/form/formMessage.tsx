@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from './form.module.scss';
 import {useFormField} from './useFormField';
 
-export const FormMessage = React.forwardRef<
+const FormMessageComponent = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({className, children, ...props}, ref) => {
@@ -24,4 +24,7 @@ export const FormMessage = React.forwardRef<
     </p>
   );
 });
-FormMessage.displayName = 'FormMessage';
+
+FormMessageComponent.displayName = 'FormMessage';
+
+export const FormMessage = React.memo(FormMessageComponent);

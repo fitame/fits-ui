@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './form.module.scss';
 import {useFormField} from './useFormField';
 
-export const FormDescription = React.forwardRef<
+const FormDescriptionComponent = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({className, ...props}, ref) => {
@@ -17,4 +17,6 @@ export const FormDescription = React.forwardRef<
     />
   );
 });
-FormDescription.displayName = 'FormDescription';
+FormDescriptionComponent.displayName = 'FormDescription';
+
+export const FormDescription = React.memo(FormDescriptionComponent);

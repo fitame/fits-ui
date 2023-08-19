@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Slot} from '@radix-ui/react-slot';
 import {useFormField} from './useFormField';
 
-export const FormControl = React.forwardRef<
+const FormControlComponent = React.forwardRef<
   React.ElementRef<typeof Slot>,
   React.ComponentPropsWithoutRef<typeof Slot>
 >(({...props}, ref) => {
@@ -22,4 +22,6 @@ export const FormControl = React.forwardRef<
     />
   );
 });
-FormControl.displayName = 'FormControl';
+FormControlComponent.displayName = 'FormControl';
+
+export const FormControl = React.memo(FormControlComponent);

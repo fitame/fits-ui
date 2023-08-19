@@ -3,7 +3,7 @@ import * as SeparatorPrimitive from '@radix-ui/react-separator';
 import Styles from './separator.module.scss';
 import {SeparatorProps, SeparatorRefProps} from './separator.types';
 
-const Separator = React.forwardRef<SeparatorRefProps, SeparatorProps>(
+const SeparatorComponent = React.forwardRef<SeparatorRefProps, SeparatorProps>(
   (
     {className, orientation = 'horizontal', decorative = true, ...props},
     ref,
@@ -19,6 +19,8 @@ const Separator = React.forwardRef<SeparatorRefProps, SeparatorProps>(
     />
   ),
 );
-Separator.displayName = SeparatorPrimitive.Root.displayName;
+
+SeparatorComponent.displayName = SeparatorPrimitive.Root.displayName;
+const Separator = React.memo(SeparatorComponent);
 
 export {Separator};

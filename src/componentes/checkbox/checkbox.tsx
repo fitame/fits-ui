@@ -3,7 +3,7 @@ import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
 import {Check} from 'lucide-react';
 import styles from './checkbox.module.scss';
 
-const Checkbox = React.forwardRef<
+const CheckboxComponent = React.forwardRef<
   React.ElementRef<typeof CheckboxPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>
 >(({className, ...props}, ref) => (
@@ -13,6 +13,8 @@ const Checkbox = React.forwardRef<
     </CheckboxPrimitive.Indicator>
   </CheckboxPrimitive.Root>
 ));
-Checkbox.displayName = CheckboxPrimitive.Root.displayName;
+CheckboxComponent.displayName = CheckboxPrimitive.Root.displayName;
+
+const Checkbox = React.memo(CheckboxComponent);
 
 export {Checkbox};

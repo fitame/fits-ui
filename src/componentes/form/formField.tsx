@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {memo, useMemo} from 'react';
+import {useMemo} from 'react';
 import {
   Controller,
   ControllerProps,
@@ -32,6 +32,6 @@ const FormFieldComponent = <
   );
 };
 
-const FormField = memo(FormFieldComponent);
+const FormField = FormFieldComponent;
 
 export {FormField};
