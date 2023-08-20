@@ -30,4 +30,34 @@
   --ring: hsl(240 5% 64.9%);
 
   --radius: 0.5rem;
+
+  /* Tamanhos de Fonte */
+  --font-size-base: 16px;
+  --font-size-heading-1: 2.5rem;
+  --font-size-heading-2: 2rem;
+  --font-size-heading-3: 1.75rem;
+  --font-size-heading-4: 1.5rem;
+  --font-size-heading-5: 1.25rem;
+  --font-size-heading-6: 1rem;
+
+  /* Outras Constantes de Estilo */
+  --spacing-unit: 1rem;
+  --line-height: 1.5;
+  --radius: 0.5rem;
+
+  /* Tipografia */
+  --font-family: 'Arial', sans-serif;
+  --font-family-heading: 'Helvetica Neue', sans-serif;
+
+  /* Alturas de Linha */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2; /* Exemplo de altura de linha diferente para títulos */
+
+  $font-weight-lighter: lighter;
+  $font-weight-light: 300;
+  $font-weight-normal: 400;
+  $font-weight-medium: 500;
+  $font-weight-semibold: 600;
+  $font-weight-bold: 700;
+  $font-weight-bolder: bolder;
 }
