@@ -1,0 +1,15 @@
+@import url(../../styles/global.scss);
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 16px;
+};
+
+.input { 
+  text-align: center;
+  width: 56px;
+  height: 56px;
+}

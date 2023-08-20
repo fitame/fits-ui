@@ -1,0 +1,90 @@
+{
+  "name": "fits-ui",
+  "private": false,
+  "version": "0.0.2",
+  "description": "Ui library based in Shadcn ui",
+  "author": "Ednilson Cardoso dos Santos<ednilsonsantos443@gmail.com>",
+  "type": "module",
+  "source": "./src/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitame/fits-ui.git"
+  },
+  "keywords": [
+    "css",
+    "react",
+    "ui",
+    "library",
+    "shadcd"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fitame/fits-ui/issues"
+  },
+  "scripts": {
+    "build": "rollup -c && tsc",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
+    "format": "prettier --write src//**/*.{ts,tsx,css} --config ./prettier.config.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "lucide-react": "^0.268.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.4.4",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "esbuild": "^0.19.2",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0-alpha.2",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-testing-library": "^5.11.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.0",
+    "postcss": "^8.4.28",
+    "postcss-import": "^15.1.0",
+    "prettier": "^3.0.2",
+    "read-pkg": "^8.0.0",
+    "rollup": "^3.28.0",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.64.1",
+    "typescript": "^5.0.2"
+  }
+}
