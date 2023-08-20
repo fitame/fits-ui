@@ -15,7 +15,7 @@ jobs:
   semantic_pr:
     runs-on: "ubuntu-latest"
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - uses: amannn/action-semantic-pull-request@v5
@@ -28,7 +28,7 @@ jobs:
       matrix:
         node: [16, 18, 20]
     env:
-      GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - uses: actions/checkout@v3
