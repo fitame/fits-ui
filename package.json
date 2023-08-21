@@ -48,8 +48,8 @@
     "react-hook-form": "^7.45.4"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": ">=16.4 || 17 || 18",
+    "react-dom": ">=16.4 || 17 || 18"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
