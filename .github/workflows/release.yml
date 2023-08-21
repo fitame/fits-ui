@@ -28,5 +28,8 @@ jobs:
       - name: Install dependencies
         run: HUSKY=0 npm ci
 
+      - name: Build project
+        run: HUSKY=0 npm run build
+
       - name: Generate Release
         run: npx semantic-release
