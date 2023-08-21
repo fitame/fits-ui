@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/fitame/fits-ui/compare/1.0.0...1.0.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* change pearDependencies versions ([882c9f7](https://github.com/fitame/fits-ui/commit/882c9f7c9b7b1b11047177089f266e4b93844c3b))
+
 # 1.0.0 (2023-08-21)
 
 
