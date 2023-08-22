@@ -1,8 +1,8 @@
-import * as FormGroup from './componentes/form';
+import * as FormGroup from './components/form';
 
-export {Input} from './componentes/input/input';
+export {Input} from './components/input/input';
 export {FormGroup};
-export {InputPinCode} from './componentes/inputPinCode/inputPinCode';
-export {Label} from './componentes/label/label';
-export {Checkbox} from './componentes/checkbox/checkbox';
-export {Separator} from './componentes/separator/separator';
+export {InputPinCode} from './components/inputPinCode/inputPinCode';
+export {Label} from './components/label/label';
+export {Checkbox} from './components/checkbox/checkbox';
+export {Separator} from './components/separator/separator';
