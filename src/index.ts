@@ -6,3 +6,4 @@ export {InputPinCode} from './components/inputPinCode/inputPinCode';
 export {Label} from './components/label/label';
 export {Checkbox} from './components/checkbox/checkbox';
 export {Separator} from './components/separator/separator';
+export {Button} from './components/button/button';
