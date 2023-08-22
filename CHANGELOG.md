@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/fitame/fits-ui/compare/1.0.1...1.0.2) (2023-08-22)
+
+
+### Bug Fixes
+
+* added button export ([#19](https://github.com/fitame/fits-ui/issues/19)) ([1f6640b](https://github.com/fitame/fits-ui/commit/1f6640b30be4e8d111309bf65e7c2c164c7e6d82))
+
 ## [1.0.1](https://github.com/fitame/fits-ui/compare/1.0.0...1.0.1) (2023-08-21)
 
 
