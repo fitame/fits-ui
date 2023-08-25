@@ -7,27 +7,27 @@ button {
 .checkbox {
   width: 1rem;
   height: 1rem;
-  background-color: var(--background);
+  background-color: hsl(var(--background));
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-width: 1px;
-  box-shadow: 0 0 0 1px var(--foreground);
-  border-color: var(--foreground);
+  box-shadow: 0 0 0 1px hsl(var(--foreground));
+  border-color: hsl(var(--foreground));
   border-radius: 0.125rem;
 }
 
 .checkbox:hover {
-  box-shadow: 0 0 0 1px var(--primary);
+  box-shadow: 0 0 0 1px hsl(var(--primary));
 }
 
 .checkbox:focus {
-  box-shadow: 0 0 0 2px var(--foreground);
+  box-shadow: 0 0 0 2px hsl(var(--foreground));
 }
 
 .indicator {
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   pointer-events: none;
   min-width: 2px;
   min-height: 2px;

@@ -7,7 +7,7 @@
 }
 
 
-.formDescription { 
+.formDescription {
   font-family: var(--font-family);
   font-size: 0.875rem;
   font-style: normal;
@@ -16,8 +16,8 @@
 }
 
 
-.textDestructive{ 
-  color: var(--destructive);
+.textDestructive{
+  color: hsl(var(--destructive));
   font-family: var(--font-family);
   font-size: 0.875rem;
   font-style: normal;
@@ -25,6 +25,6 @@
   line-height: 0.875rem;
 }
 
-.formMessage { 
+.formMessage {
   font-size: 0.75rem;
 }

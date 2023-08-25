@@ -7,7 +7,7 @@
   line-height: 1;
   font-weight: 500;
   font-family: var(--font-family);
-  color: var(--primary-foreground);
+  color: hsl(var(--primary-foreground));
   border-radius: 6px;
   font-size: 0.875rem;
   font-style: normal;
@@ -18,12 +18,12 @@
 
 
 .default {
-  color: var(--primary-foreground);
-  background-color: var(--primary);
+  color: hsl(var(--primary-foreground));
+  background-color: hsl(var(--primary));
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  border: 0 solid #e5e7eb;
+  border: 0 solid hsl(var(--border));
   -webkit-appearance: button;
   height: 35px;
 }
@@ -41,9 +41,9 @@
 }
 
 .outline{
-  border: 1px solid #e5e7eb;
+  border: 1px solid hsl(var(--border));
   font-weight: 600;
-  color: var(--text-primary);
+  color: hsl(var(--text-primary));
 }
 
 .secondary{
@@ -51,7 +51,7 @@
 }
 
 .ghost{
-  color: var(--tertiary);
+  color: hsl(var(--tertiary));
 }
 
 .default_size {
