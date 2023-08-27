@@ -1,5 +1,5 @@
 import * as FormGroup from './components/form';
-import * as CommandGroup from './components/commandGroup/commandGroup';
+import Command from './components/command';
 import * as DialogGroup from './components/dialogGroup/dialogGroup';
 import * as PopoverGroup from './components/popoverGroup/popoverGroup';
 
@@ -10,4 +10,4 @@ export {Checkbox} from './components/checkbox/checkbox';
 export {Separator} from './components/separator/separator';
 export {Button} from './components/button/button';
 
-export {FormGroup, CommandGroup, DialogGroup, PopoverGroup};
+export {FormGroup, Command, DialogGroup, PopoverGroup};
