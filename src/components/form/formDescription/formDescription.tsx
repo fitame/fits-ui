@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './form.module.scss';
-import {useFormField} from './useFormField';
+import styles from './formDescription.module.scss';
+import {useFormField} from '../useFormField/useFormField';
 
 const FormDescriptionComponent = React.forwardRef<
   HTMLParagraphElement,

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './form.module.scss';
+import styles from './formItem.module.scss';
 
 type FormItemContextValue = {
   id: string;
