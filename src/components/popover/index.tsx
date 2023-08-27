@@ -7,4 +7,7 @@ const CommandRoot = Popover as typeof Popover & {
   Content: typeof PopoverContent;
 };
 
+CommandRoot.Trigger = PopoverTrigger;
+CommandRoot.Content = PopoverContent;
+
 export default CommandRoot;

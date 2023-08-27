@@ -15,4 +15,11 @@ const DialogRoot = Dialog as typeof Dialog & {
   Trigger: typeof DialogTrigger;
 };
 
+DialogRoot.Content = DialogContent;
+DialogRoot.Footer = DialogFooter;
+DialogRoot.Header = DialogHeader;
+DialogRoot.Overlay = DialogOverlay;
+DialogRoot.Portal = DialogPortal;
+DialogRoot.Trigger = DialogTrigger;
+
 export default DialogRoot;
