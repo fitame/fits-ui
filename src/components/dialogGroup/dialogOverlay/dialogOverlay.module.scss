@@ -1,0 +1,20 @@
+.dialogPrimitiveOverlay {
+  position: fixed;
+  inset: 0px;
+  z-index: 50;
+  -webkit-backdrop-filter: 4px;
+  backdrop-filter: 4px;
+}
+
+.dialogPrimitiveOverlay[data-state="open"] {
+  /* Unknown class .animate-in */
+}
+
+.dialogPrimitiveOverlay[data-state="closed"] {
+  /* Unknown class .animate-out */
+  /* Unknown class .fade-out-0 */
+}
+
+.dialogPrimitiveOverlay[data-state="open"] {
+  /* Unknown class .fade-in-0 */
+}
