@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/fitame/fits-ui/compare/1.0.3...2.0.0) (2023-08-28)
+
+
+### Features
+
+* added new components and remove external css ([#22](https://github.com/fitame/fits-ui/issues/22)) ([e9a480c](https://github.com/fitame/fits-ui/commit/e9a480cce845e3f34a233a4b724f547626e2ea84))
+
+
+### BREAKING CHANGES
+
+* Now it is not more necessary import external css
+
 ## [1.0.3](https://github.com/fitame/fits-ui/compare/1.0.2...1.0.3) (2023-08-24)
 
 
