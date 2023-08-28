@@ -41,7 +41,7 @@
 }
 
 .outline{
-  border: 1px solid #e5e7eb;
+  border: 1px solid hsl(var(--border));
   font-weight: 600;
   color: tokens.$text-primary;
 }

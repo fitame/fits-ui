@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/fitame/fits-ui/compare/1.0.2...1.0.3) (2023-08-24)
+
+
+### Bug Fixes
+
+* background color separator component ([#20](https://github.com/fitame/fits-ui/issues/20)) ([1c319dd](https://github.com/fitame/fits-ui/commit/1c319dd230f8b6055b2bd76252f8892a854dd550))
+
 ## [1.0.2](https://github.com/fitame/fits-ui/compare/1.0.1...1.0.2) (2023-08-22)
 
 
