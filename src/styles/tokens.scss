@@ -1,0 +1,35 @@
+$background: var(--background, 0 0% 100%);
+$foreground: var(--foreground, 240 10% 3.9%);
+
+$card: var(--card, 0 0% 100%);
+$card-foreground: var(--card-foreground, 240 10% 3.9%);
+
+$popover: var(--popover, 0 0% 100%);
+$popover-foreground: var(--popover-foreground, 240 10% 3.9%);
+
+$primary: var(--primary, 240 5.9% 10%);
+$primary-foreground: var(--primary-foreground, 0 0% 98%);
+
+$secondary: var(--secondary, 240 4.8% 95.9%);
+$secondary-foreground: var(--secondary-foreground, 240 5.9% 10%);
+
+$muted: var(--muted, 240 4.8% 95.9%);
+$muted-foreground: var(--muted-foreground, 240 3.8% 46.1%);
+
+$accent: var(--accent, 240 4.8% 95.9%);
+$accent-foreground: var(--accent-foreground, 240 5.9% 10%);
+
+$destructive: var(--destructive, 0 84.2% 60.2%);
+$destructive-foreground: var(--destructive-foreground, 0 0% 98%);
+
+$text-primary: var(--text-primary, 351, 14%, 10%);
+
+$border: var(--border, 240 5.9% 90%);
+
+$input: var(--input, 240 5.9% 90%);
+
+$ring: var(--ring, 240 5% 64.9%);
+
+$radius: var(--radius, 0.5rem);
+
+$font-family: var(--font-family, 'Inter', sans-serif);

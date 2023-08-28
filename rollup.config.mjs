@@ -24,7 +24,7 @@ export default [
       resolve(),
       postcss({
         modules: true,
-        extract: "fits-styles.css",
+        extract: false,
         minimize: true,
         use: ["sass"],
         sourcemap: sourcemap,

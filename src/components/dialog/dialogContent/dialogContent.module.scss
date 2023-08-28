@@ -1,3 +1,5 @@
+@use "../../../styles/tokens.scss" as tokens;
+
 .dialogPrimitiveContent {
   position: fixed;
   left: 50%;
@@ -11,7 +13,7 @@
     scaleX(1) scaleY(1);
   gap: 1rem;
   border-width: 1px;
-  background-color: var(--background);
+  background-color: hsl(tokens.$background);
   padding: 1.5rem;
   box-shadow: 0 0 #0000 0 0 #0000,
     0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / 0.1),

@@ -1,5 +1,7 @@
+@use "../../../styles/tokens.scss" as tokens;
+
 .commandPrimitiveItem{
-  font-family: var(--font-family);
+  font-family: tokens.$font-family;
   position: relative;
   display: flex;
   cursor: default;
@@ -16,7 +18,7 @@
   line-height: 1.25rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
-  color: hsl(var(--text-primary));
+  color: hsl(tokens.$text-primary);
 }
 
 .commandPrimitiveItem[aria-selected="true"] {

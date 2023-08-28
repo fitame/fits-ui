@@ -1,3 +1,5 @@
+@use "../../styles/tokens.scss" as tokens;
+
 
 button {
   all: unset;
@@ -6,34 +8,34 @@ button {
 .checkbox {
   width: 1rem;
   height: 1rem;
-  background-color: hsl(var(--background));
+  background-color: hsl(tokens.$background);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-width: 1px;
-  box-shadow: 0 0 0 1px hsl(var(--muted-foreground));
-  border-color: hsl(var(--muted-foreground));
+  box-shadow: 0 0 0 1px hsl(tokens.$muted-foreground);
+  border-color: hsl(tokens.$muted-foreground);
   border-radius: 0.125rem;
   border-radius: 0.125rem;
   border-width: 1px;
-  border-color: hsla(var(--primary), 1);
+  border-color: hsla(tokens.$primary, 1);
 }
 
 .checkbox:hover {
-   box-shadow: 0 0 0 1px hsl(var(--text-primary));
+   box-shadow: 0 0 0 1px hsl(tokens.$text-primary);
 }
 
 .checkbox:focus {
-   box-shadow: 0 0 0 2px hsl(var(--text-primary));
+   box-shadow: 0 0 0 2px hsl(tokens.$text-primary);
 }
 
 .checkbox[data-state="checked"]{
-  box-shadow: 0 0 0 1px hsla(var(--text-primary));
+  box-shadow: 0 0 0 1px hsla(tokens.$text-primary);
 }
 
 .indicator {
-  color: hsl(var(--text-primary));
+  color: hsl(tokens.$text-primary);
   pointer-events: none;
   min-width: 2px;
   min-height: 2px;

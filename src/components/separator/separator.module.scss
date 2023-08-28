@@ -1,6 +1,8 @@
+@use "../../styles/tokens.scss" as tokens;
+
 .separator {
   flex-shrink: 0;
-  background-color: hsl(var(--border));
+  background-color: hsl(tokens.$border);
 }
 
 .horizontal {

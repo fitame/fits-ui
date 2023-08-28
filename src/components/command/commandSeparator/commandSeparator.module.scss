@@ -1,6 +1,8 @@
+@use "../../../styles/tokens.scss" as tokens;
+
 .commandSeparator{
   margin-left: calc(0.25rem * -1);
   margin-right: calc(0.25rem * -1);
   height: 1px;
-  background-color: hsl(var(--border));
+  background-color: hsl(tokens.$border);
 }

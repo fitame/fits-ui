@@ -1,4 +1,4 @@
-@import url(../../styles/global.scss);
+@use "../../styles/tokens.scss" as tokens;
 
 .base {
   display: inline-flex;
@@ -6,8 +6,8 @@
   justify-content: center;
   line-height: 1;
   font-weight: 500;
-  font-family: var(--font-family);
-  color: var(--primary-foreground);
+  font-family: hsl(tokens.$font-family);
+  color: hsl(tokens.$primary-foreground);
   border-radius: 6px;
   font-size: 0.875rem;
   font-style: normal;
@@ -18,12 +18,12 @@
 
 
 .default {
-  color: var(--primary-foreground);
-  background-color: var(--primary);
+  color: hsl(tokens.$primary-foreground);
+  background-color: hsl(tokens.$primary);
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  border: 0 solid #e5e7eb;
+  border: 0 solid hsl(tokens.$border);
   -webkit-appearance: button;
   height: 35px;
 }
@@ -43,7 +43,7 @@
 .outline{
   border: 1px solid #e5e7eb;
   font-weight: 600;
-  color: var(--text-primary);
+  color: tokens.$text-primary;
 }
 
 .secondary{
@@ -51,7 +51,7 @@
 }
 
 .ghost{
-  color: var(--tertiary);
+  color: hsl(tokens.$muted);
 }
 
 .default_size {

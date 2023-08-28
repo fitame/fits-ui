@@ -1,6 +1,8 @@
+@use "../../../styles/tokens.scss" as tokens;
+
 .textDestructive{
-  color: var(--destructive);
-  font-family: var(--font-family);
+  color: tokens.$destructive;
+  font-family: tokens.$font-family;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;

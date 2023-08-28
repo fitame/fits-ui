@@ -1,17 +1,19 @@
+@use "../../../styles/tokens.scss" as tokens;
+
 .commandDialogContent {
   overflow: hidden;
   padding: 0px;
 }
 
 .commandDialogContent::placeholder {
-  color: hsl(var(--border));
+  color: hsl(tokens.$border);
 }
 
 .commandStyle [cmdk-group-heading] {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-weight: 500;
-  background-color: hsl(var(--border));
+  background-color: hsl(tokens.$border);
 }
 
 .commandStyle [cmdk-group]:not([hidden]) ~ [cmdk-group] {
