@@ -1,6 +1,6 @@
 import * as React from 'react';
-import styles from './form.module.scss';
-import {useFormField} from './useFormField';
+import styles from './formMessage.module.scss';
+import {useFormField} from '../useFormField/useFormField';
 
 const FormMessageComponent = React.forwardRef<
   HTMLParagraphElement,

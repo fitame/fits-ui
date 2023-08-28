@@ -1,0 +1,51 @@
+@use "../../../styles/tokens.scss" as tokens;
+
+.commandDialogContent {
+  overflow: hidden;
+  padding: 0px;
+}
+
+.commandDialogContent::placeholder {
+  color: hsl(tokens.$border);
+}
+
+.commandStyle [cmdk-group-heading] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 500;
+  background-color: hsl(tokens.$border);
+}
+
+.commandStyle [cmdk-group]:not([hidden]) ~ [cmdk-group] {
+  padding-top: 0;
+}
+
+.commandStyle [cmdk-group] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.commandStyle [cmdk-input-wrapper] svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.commandStyle [cmdk-input] {
+  height: 3rem;
+}
+
+.commandStyle [cmdk-item] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top:  0.75rem;
+  padding-bottom:  0.75rem;
+}
+
+.commandStyle [cmdk-item] svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.commandStyle > span {
+  font-weight: 700;
+}

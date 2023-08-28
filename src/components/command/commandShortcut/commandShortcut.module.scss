@@ -1,0 +1,9 @@
+@use "../../../styles/tokens.scss" as tokens;
+
+.commandShortcut {
+  margin-left: auto;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.1em;
+  background-color: hsl(tokens.$border);
+}
