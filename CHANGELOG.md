@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/fitame/fits-ui/compare/2.0.0...2.1.0) (2023-08-29)
+
+
+### Features
+
+* added card component ([#23](https://github.com/fitame/fits-ui/issues/23)) ([67b9622](https://github.com/fitame/fits-ui/commit/67b96220c7ad93775f3afc69676ae3b43737e1cc))
+
 # [2.0.0](https://github.com/fitame/fits-ui/compare/1.0.3...2.0.0) (2023-08-28)
 
 
