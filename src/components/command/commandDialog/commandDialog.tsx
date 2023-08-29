@@ -1,7 +1,5 @@
 import {DialogProps} from '@radix-ui/react-dialog';
-
 import {Command} from '../command/command';
-
 import Dialog from '../../dialog';
 import styles from './commandDialog.module.scss';
 

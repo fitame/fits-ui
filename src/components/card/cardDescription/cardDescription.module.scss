@@ -1,0 +1,8 @@
+@use "../../../styles/tokens.scss" as tokens;
+
+
+.cardDescription {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(tokens.$muted-foreground)
+}
