@@ -1,0 +1,10 @@
+@use "../../../styles/tokens.scss" as tokens;
+
+.cardTitle{
+  font-family: tokens.$font-family;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
