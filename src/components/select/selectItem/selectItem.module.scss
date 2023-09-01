@@ -1,0 +1,44 @@
+@use "../../../styles/tokens.scss" as tokens;
+
+.selectPrimitiveItem {
+  font-family: tokens.$font-family;
+  position: relative;
+  display: flex;
+  width: 100%;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  align-items: center;
+  border-radius: 0.125rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+
+.selectPrimitiveItem:focus {
+  background-color: hsl(tokens.$accent);
+  color: hls(tokens.$accent-foreground);
+}
+
+.selectPrimitiveItem[data-disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+.selectItemSpan{
+  position: absolute;
+  left: 0.5rem;
+  display: flex;
+  height: 0.875rem;
+  width: 0.875rem;
+  align-items: center;
+  justify-content: center;
+}
