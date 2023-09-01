@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/fitame/fits-ui/compare/2.1.0...2.2.0) (2023-09-01)
+
+
+### Features
+
+* added select component ([#25](https://github.com/fitame/fits-ui/issues/25)) ([dadf0ef](https://github.com/fitame/fits-ui/commit/dadf0ef63bfb73d7945f6b18080f9b4049c0e873))
+
 # [2.1.0](https://github.com/fitame/fits-ui/compare/2.0.0...2.1.0) (2023-08-29)
 
 

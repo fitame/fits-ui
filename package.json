@@ -1,7 +1,7 @@
 {
   "name": "fits-ui",
   "private": false,
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Ui library based in Shadcn ui",
   "author": "Ednilson Cardoso dos Santos<ednilsonsantos443@gmail.com>",
   "type": "module",
