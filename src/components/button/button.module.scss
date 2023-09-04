@@ -6,7 +6,7 @@
   justify-content: center;
   line-height: 1;
   font-weight: 500;
-  font-family: hsl(tokens.$font-family);
+  font-family: tokens.$font-family;
   color: hsl(tokens.$primary-foreground);
   border-radius: 6px;
   font-size: 0.875rem;
@@ -40,18 +40,19 @@
 
 }
 
-.outline{
-  border: 1px solid hsl(var(--border));
+.outline {
+  border: 1px solid hsl(tokens.$border));
   font-weight: 600;
   color: tokens.$text-primary;
 }
 
-.secondary{
+.secondary {
 
 }
 
-.ghost{
-  color: hsl(tokens.$muted);
+.ghost {
+  color: hsl(tokens.$accent-foreground);
+  background-color: hsl(tokens.$accent);
 }
 
 .default_size {
