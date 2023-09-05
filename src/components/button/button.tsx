@@ -5,12 +5,12 @@ import styles from './button.module.scss';
 const buttonVariants = {
   variants: {
     variant: {
-      default: styles.default,
-      destructive: styles.destructive,
-      outline: styles.outline,
-      secondary: styles.secondary,
-      ghost: styles.ghost,
-      link: styles.link,
+      default: `${styles.base} ${styles.default}`,
+      destructive: `${styles.base} ${styles.destructive}`,
+      outline: `${styles.base} ${styles.outline}`,
+      secondary: `${styles.base} ${styles.secondary}`,
+      ghost: `${styles.base} ${styles.ghost}`,
+      link: `${styles.base} ${styles.link}`,
     },
     size: {
       default: styles.default_size,
@@ -38,7 +38,7 @@ const ButtonComponent = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : 'button';
     return (
       <Comp
-        className={`${styles.base} ${
+        className={`${
           variant
             ? buttonVariants.variants.variant[variant]
             : buttonVariants.defaultVariants.variant

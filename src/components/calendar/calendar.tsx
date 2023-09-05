@@ -3,7 +3,10 @@ import {ChevronLeft, ChevronRight} from 'lucide-react';
 import {DayPicker} from 'react-day-picker';
 
 import {buttonVariants} from '../button/button';
+
 import styles from './calendar.module.scss';
+
+const {outline, ghost} = buttonVariants.variants.variant;
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
 
@@ -27,7 +30,7 @@ const Calendar = ({
         caption: styles.caption,
         caption_label: styles.captionLabel,
         nav: styles.nav,
-        nav_button: `${buttonVariants.variants.variant.outline} ${styles.navButton}`,
+        nav_button: `${outline} ${styles.navButton}`,
         nav_button_previous: styles.navButtonPrevious,
         nav_button_next: styles.navButtonNext,
         table: styles.table,
@@ -35,7 +38,7 @@ const Calendar = ({
         head_cell: styles.headCell,
         row: styles.row,
         cell: styles.cell,
-        day: `${buttonVariants.variants.variant.ghost} ${styles.day}`,
+        day: `${ghost} ${styles.day}`,
         day_selected: styles.daySelected,
         day_today: styles.dayToday,
         day_outside: styles.dayOutside,

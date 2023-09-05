@@ -7,7 +7,7 @@
   line-height: 1;
   font-weight: 500;
   font-family: tokens.$font-family;
-  color: hsl(tokens.$primary-foreground);
+  color: hsl(tokens.$text-primary);
   border-radius: 6px;
   font-size: 0.875rem;
   font-style: normal;
@@ -33,11 +33,22 @@
   cursor: pointer;
 }
 
+.link {
+  color: hsl(tokens.$text-primary);
+}
 
+.link {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
 
-.destructive{
+.destructive {
+  color: hsl(tokens.$destructive-foreground);
+  background-color: hsl(tokens.$destructive);
+}
 
-
+.destructive:hover {
+  background-color: hsl(tokens.$destructive/0.9);
 }
 
 .outline {
@@ -46,11 +57,21 @@
   color: tokens.$text-primary;
 }
 
-.secondary {
-
+.outline:hover {
+  background-color: hsl(tokens.$accent);
+  color: hsl(tokens.$accent-foreground);
 }
 
-.ghost {
+.secondary {
+  background-color: hsl(tokens.$secondary);
+  color: hsl(tokens.$secondary-foreground);
+}
+
+.secondary:hover {
+  background-color: hsl(tokens.$secondary/0.8);
+}
+
+.ghost:hover {
   color: hsl(tokens.$accent-foreground);
   background-color: hsl(tokens.$accent);
 }
