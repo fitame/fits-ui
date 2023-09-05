@@ -6,6 +6,7 @@ import Input from './components/input';
 import Card from './components/card';
 import Select from './components/select';
 
+export {Calendar} from './components/calendar/calendar';
 export {Badge} from './components/badge/badge';
 export {Label} from './components/label/label';
 export {Checkbox} from './components/checkbox/checkbox';

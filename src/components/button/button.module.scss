@@ -6,8 +6,8 @@
   justify-content: center;
   line-height: 1;
   font-weight: 500;
-  font-family: hsl(tokens.$font-family);
-  color: hsl(tokens.$primary-foreground);
+  font-family: tokens.$font-family;
+  color: hsl(tokens.$text-primary);
   border-radius: 6px;
   font-size: 0.875rem;
   font-style: normal;
@@ -33,25 +33,47 @@
   cursor: pointer;
 }
 
-
-
-.destructive{
-
-
+.link {
+  color: hsl(tokens.$text-primary);
 }
 
-.outline{
-  border: 1px solid hsl(var(--border));
+.link {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.destructive {
+  color: hsl(tokens.$destructive-foreground);
+  background-color: hsl(tokens.$destructive);
+}
+
+.destructive:hover {
+  background-color: hsl(tokens.$destructive/0.9);
+}
+
+.outline {
+  border: 1px solid hsl(tokens.$border);
   font-weight: 600;
   color: tokens.$text-primary;
 }
 
-.secondary{
-
+.outline:hover {
+  background-color: hsl(tokens.$accent);
+  color: hsl(tokens.$accent-foreground);
 }
 
-.ghost{
-  color: hsl(tokens.$muted);
+.secondary {
+  background-color: hsl(tokens.$secondary);
+  color: hsl(tokens.$secondary-foreground);
+}
+
+.secondary:hover {
+  background-color: hsl(tokens.$secondary/0.8);
+}
+
+.ghost:hover {
+  color: hsl(tokens.$accent-foreground);
+  background-color: hsl(tokens.$accent);
 }
 
 .default_size {
