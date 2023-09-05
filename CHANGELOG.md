@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/fitame/fits-ui/compare/2.2.0...2.3.0) (2023-09-05)
+
+
+### Features
+
+* added calendar component ([#27](https://github.com/fitame/fits-ui/issues/27)) ([adad3ab](https://github.com/fitame/fits-ui/commit/adad3ab57cc2a4fb8cf3b7139576d9ab22a388be))
+
 # [2.2.0](https://github.com/fitame/fits-ui/compare/2.1.0...2.2.0) (2023-09-01)
 
 
