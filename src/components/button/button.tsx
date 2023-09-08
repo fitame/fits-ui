@@ -21,7 +21,7 @@ const buttonVariants = {
     },
   },
   defaultVariants: {
-    variant: styles.default,
+    variant: `${styles.base} ${styles.default}`,
     size: styles.default_size,
   },
 };
