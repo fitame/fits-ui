@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/fitame/fits-ui/compare/2.3.0...2.3.1) (2023-09-08)
+
+
+### Bug Fixes
+
+* button default ([#28](https://github.com/fitame/fits-ui/issues/28)) ([5e159d6](https://github.com/fitame/fits-ui/commit/5e159d6fd74c542e72dbddb2997f42ea976347a8))
+
 # [2.3.0](https://github.com/fitame/fits-ui/compare/2.2.0...2.3.0) (2023-09-05)
 
 
