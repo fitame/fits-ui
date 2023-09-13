@@ -5,6 +5,7 @@ import Popover from './components/popover';
 import Input from './components/input';
 import Card from './components/card';
 import Select from './components/select';
+import {ToastProvider, useToast} from './components/toast';
 
 export {Calendar} from './components/calendar/calendar';
 export {Badge} from './components/badge/badge';
@@ -13,4 +14,14 @@ export {Checkbox} from './components/checkbox/checkbox';
 export {Separator} from './components/separator/separator';
 export {Button} from './components/button/button';
 
-export {Form, Command, Dialog, Popover, Input, Card, Select};
+export {
+  Form,
+  Command,
+  Dialog,
+  Popover,
+  Input,
+  Card,
+  Select,
+  ToastProvider,
+  useToast,
+};

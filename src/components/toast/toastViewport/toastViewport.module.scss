@@ -1,0 +1,21 @@
+.toastViewport {
+  position: fixed;
+  top: var(--tw-size-0);
+  z-index: 100;
+  display: flex;
+  max-height: 100vh;
+  width: 100%;
+  flex-direction: column-reverse;
+  padding: var(--tw-size-4);
+
+  @media (min-width: 640px) {
+    bottom: var(--tw-size-0);
+    right: var(--tw-size-0);
+    top: auto;
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 420px;
+  }
+}

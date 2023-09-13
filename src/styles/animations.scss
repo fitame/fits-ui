@@ -1,0 +1,55 @@
+@keyframes animated-in {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+
+@keyframes animated-out {
+  from {background-color: yellow;}
+  to {background-color: red;}
+}
+
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes slide-in-from-top-full {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(0%);}
+}
+
+
+@keyframes slide-in-from-bottom-full {
+  from {transform: translateY(100%);}
+  to {transform: translateY(0%);}
+}
+
+@mixin animate($animation,$duration,$method,$times){
+  animation: $animation $duration $method $times;
+}
+
+@mixin fade-out($valeu){
+  @keyframes fade-out{
+    0% {
+      opacity: $valeu;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}

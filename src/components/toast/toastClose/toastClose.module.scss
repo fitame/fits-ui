@@ -1,0 +1,30 @@
+@use "../../../styles/tokens.scss" as tokens;
+
+.toastPrimitivesClose {
+  position: absolute;
+  right: 0.5rem;
+  padding: 0.25rem;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border-radius: calc(tokens.$radius - 2px);
+  top: 0.5rem;
+  color: hsl(tokens.$foreground/.5);
+}
+
+
+.toastPrimitivesClose:hover {
+  color: hsl(tokens.$foreground);
+}
+
+.toastPrimitivesClose:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  opacity: 1;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
